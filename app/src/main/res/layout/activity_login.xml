@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/hijau"
+    tools:context=".LoginActivity">
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_back_white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="64dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/lalala"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+
+            android:gravity="top"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lalala"
+            android:text="MASUK"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+
+            android:layout_marginBottom="32dp"/>
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email atau Nama Pengguna"
+            android:textColor="@color/hijau"
+            android:textColorHint="@color/hijau"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="8dp"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="8dp"
+            android:background="@drawable/edittext_background"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etUsername"
+        app:passwordToggleEnabled="true"
+        app:hintEnabled="false">
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kata Sandi"
+            android:textColorHint="@color/hijau"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_background"
+            android:padding="15dp"
+            android:textColor="@color/hijau"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="8dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/transparent"
+            android:text="Lupa Kata Sandi?"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Atau masuk dengan:" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/sosialOp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            android:backgroundTint="#3b5998"
+            android:textColor="#ffffff"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google"
+            android:backgroundTint="#dd4b39"
+            android:textColor="#ffffff"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnApple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apple"
+            android:backgroundTint="#000000"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            android:backgroundTint="#C68018"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="bottom"
+            android:layout_below="@id/sosialOp"
+            android:layout_marginTop="25dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

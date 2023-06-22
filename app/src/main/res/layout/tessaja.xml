@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/hijau"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="24dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailTil"
+        android:layout_marginTop="10dp"
+        app:hintEnabled="false">
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_background"
+            android:padding="15dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="8dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameTil"
+        app:hintEnabled="false">
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Pengguna"
+            android:inputType="text"
+            android:background="@drawable/edittext_background"
+            android:padding="15dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="8dp"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="8dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passTil"
+        app:passwordToggleEnabled="true"
+        app:hintEnabled="false">
+        <EditText
+            android:id="@+id/passEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kata Sandi"
+            android:inputType="textPassword"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false"
+            android:background="@drawable/edittext_background"
+            android:padding="15dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="8dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passKonfTil"
+        app:passwordToggleEnabled="true"
+        app:hintEnabled="false">
+        <EditText
+            android:id="@+id/passKonfEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Konfirmasi Kata Sandi"
+            android:inputType="textPassword"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false"
+            android:background="@drawable/edittext_background"
+            android:padding="15dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="8dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/loginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sudah punya akun? Masuk"
+        android:textSize="16sp"
+        android:textColor="@color/oren"
+        android:textStyle="italic"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C68018"
+        android:text="Register"/>
+
+
+
+</LinearLayout>
