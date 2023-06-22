@@ -119,29 +119,7 @@
                     android:drawablePadding="8dp"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/passKonfTil"
-                android:layout_below="@+id/passTil"
-                app:passwordToggleEnabled="true"
-                app:hintEnabled="false">
-                <EditText
-                    android:id="@+id/passKonfEt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Konfirmasi Kata Sandi"
-                    android:inputType="textPassword"
-                    android:textColorHint="@color/hijau"
-                    android:background="@drawable/edittext_background"
-                    android:padding="15dp"
-                    android:textColor="@color/hijau"
-                    android:layout_marginBottom="24dp"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginEnd="30dp"
-                    android:drawableStart="@drawable/ic_password"
-                    android:drawablePadding="8dp"/>
-            </com.google.android.material.textfield.TextInputLayout>
+
             <TextView
                 android:id="@+id/loginTextView"
                 android:layout_width="wrap_content"
@@ -149,7 +127,7 @@
                 android:layout_marginStart="30dp"
                 android:text="Sudah punya akun? Masuk"
                 android:textSize="16sp"
-                android:layout_below="@id/passKonfTil"
+                android:layout_below="@id/passTil"
                 android:textColor="@color/white"
                 android:textStyle="italic"
                 android:layout_marginTop="2dp"/>

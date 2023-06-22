@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "37925331836",
+    "project_id": "smartshowroom-9bd9b",
+    "storage_bucket": "smartshowroom-9bd9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37925331836:android:52de334abac0581d8c7af9",
+        "android_client_info": {
+          "package_name": "com.unand.smartshowroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37925331836-905ne34qact7ukt24h4mcah528mrap72.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTyky13kqOcefo9q3bY6WNhUDHytOksKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37925331836-905ne34qact7ukt24h4mcah528mrap72.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -22,153 +22,178 @@
         android:orientation="vertical">
         <ImageView
             android:id="@+id/lalala"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
             android:src="@drawable/logo"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-
-            android:gravity="top"/>
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/lalala"
             android:text="MASUK"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="@android:color/white"
-            android:textSize="24sp"
+            android:textSize="28sp"
             android:textStyle="bold"
-            android:textAllCaps="false"
-
-            android:layout_marginBottom="32dp"/>
+            android:layout_marginBottom="24dp"/>
     </LinearLayout>
 
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilUsername"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:hintEnabled="false">
+        android:layout_height="match_parent">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etUsername"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Email atau Nama Pengguna"
-            android:textColor="@color/hijau"
-            android:textColorHint="@color/hijau"
-            android:inputType="textEmailAddress"
-            android:padding="15dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="8dp"
-            android:drawableLeft="@drawable/ic_email"
-            android:drawablePadding="8dp"
-            android:background="@drawable/edittext_background"/>
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
 
-    </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email atau Nama Pengguna"
+                    android:textColor="@color/hijau"
+                    android:textColorHint="@color/hijau"
+                    android:inputType="textEmailAddress"
+                    android:padding="15dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="8dp"
+                    android:background="@drawable/edittext_background"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/etUsername"
-        app:passwordToggleEnabled="true"
-        app:hintEnabled="false">
-        <EditText
-            android:id="@+id/etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Kata Sandi"
-            android:textColorHint="@color/hijau"
-            android:inputType="textPassword"
-            android:background="@drawable/edittext_background"
-            android:padding="15dp"
-            android:textColor="@color/hijau"
-            android:layout_marginBottom="8dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:drawableStart="@drawable/ic_password"
-            android:drawablePadding="8dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
-    </com.google.android.material.textfield.TextInputLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tilUsername"
+                app:passwordToggleEnabled="true"
+                app:hintEnabled="false">
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Kata Sandi"
+                    android:textColorHint="@color/hijau"
+                    android:inputType="textPassword"
+                    android:background="@drawable/edittext_background"
+                    android:padding="15dp"
+                    android:textColor="@color/hijau"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawablePadding="8dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
-            android:id="@+id/btnForgotPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
-            android:background="@android:color/transparent"
-            android:text="Lupa Kata Sandi?"
-            android:textColor="@color/white" />
+            <Button
+                android:id="@+id/btnForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/tilPassword"
+                android:background="@android:color/transparent"
+                android:text="Lupa Kata Sandi?"
+                android:textColor="@color/white" />
+            <LinearLayout
+                android:id="@+id/opsiTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnForgotPassword"
+                android:orientation="vertical"
+                android:gravity="center">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Atau masuk dengan:" />
-    </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Atau masuk dengan:" />
+            </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/sosialOp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/opsiTv"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
 
-    <LinearLayout
-        android:id="@+id/sosialOp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp">
+                <Button
+                    android:id="@+id/btnFacebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook"
+                    android:background="@drawable/opti_button_background"
+                    android:textColor="@color/black"
+                    app:backgroundTint="#FDFDFD"
+                    android:drawableLeft="@drawable/fb"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginBottom="8dp" />
 
-        <Button
-            android:id="@+id/btnFacebook"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Facebook"
-            android:backgroundTint="#3b5998"
-            android:textColor="#ffffff"
-            android:layout_marginEnd="8dp" />
+                <Button
+                    android:id="@+id/btnGoogle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/google"
+                    android:text="Google"
+                    app:backgroundTint="#FDFDFD"
+                    android:background="@drawable/edittext_background"
+                    android:backgroundTint="#dd4b39"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginBottom="8dp" />
 
-        <Button
-            android:id="@+id/btnGoogle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Google"
-            android:backgroundTint="#dd4b39"
-            android:textColor="#ffffff"
-            android:layout_marginEnd="8dp" />
+                <Button
+                    android:id="@+id/btnApple"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apple"
+                    android:background="@drawable/edittext_background"
+                    android:drawableLeft="@drawable/apple"
+                    app:backgroundTint="#FDFDFD"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="8dp" />
 
-        <Button
-            android:id="@+id/btnApple"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Apple"
-            android:backgroundTint="#000000"
-            android:textColor="#ffffff" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/sosialOp"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masuk"
+                    android:backgroundTint="#C68018"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="bottom"
+                    android:layout_below="@id/sosialOp"
+                    android:layout_marginTop="25dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp"
-        android:gravity="center">
-        <Button
-            android:id="@+id/btnLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Masuk"
-            android:backgroundTint="#C68018"
-            android:textColor="#ffffff"
-            android:textStyle="bold"
-            android:textSize="24dp"
-            android:layout_centerHorizontal="true"
-            android:gravity="bottom"
-            android:layout_below="@id/sosialOp"
-            android:layout_marginTop="25dp" />
-    </LinearLayout>
 
 
 </LinearLayout>
